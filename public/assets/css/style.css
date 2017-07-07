@@ -1,19 +1,32 @@
+body {
+  background-image: url(../../assets/css/wall_background.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 25px;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: transparent;
+
 }
 
 .label {
   font-weight: bold;
+  color: white;
+  font-size: 25px;
 }
 
 .create-update-form {
   padding: 5px;
   margin: 5px;
   background: aqua;
+
 }
 
 .form-group {
   margin-bottom: 5px;
+
 }
