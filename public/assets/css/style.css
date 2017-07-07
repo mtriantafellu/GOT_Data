@@ -2,8 +2,14 @@ body {
   background-image: url(../../assets/css/wall_background.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-size: 25px;
+}
+
+.jumbotron {
+  background: transparent;
+  color: white;
 }
 
 li {

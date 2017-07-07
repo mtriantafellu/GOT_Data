@@ -1,7 +1,12 @@
-<h1>Game of Thrones App</h1>
+
+<div class="jumbotron jumbotron-billboard" class="banner" align="center">
+    <h1>Game of Thrones App</h1>
+</div>
 
 <p>Manage Battles From Game Of Thrones</p>
 
+<div class="row">
+    <div class="col-lg-6">
 <ul>
     {{#each battles}}
         <li>
@@ -38,3 +43,45 @@
 
     <button type="submit">Add a Battle</button>
 </form>
+
+    </div>
+
+    <div class="col-lg-6">
+        <ul>
+            {{#each battles}}
+                <li>
+                    <p><span class="label">Name:</span> {{this.name}}</p>
+                    <p><span class="label">Year:</span> {{this.year}}</p>
+                    <p><span class="label">Battle_Number:</span> {{this.battle_number}}</p>
+
+                    <form action="/{{this.name}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="name" value="{{this.name}}">
+                        <button type="submit">Delete</button>
+                    </form>
+
+                    <a href="/{{this.name}}">Update with new battle</a>
+                </li>
+            {{/each}}
+        </ul>
+
+        <h2>Add a Battle</h2>
+
+        <form class="create-form" action="/" method="POST">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="name">Year:</label>
+                <input type="text" id="year" name="name">
+            </div>
+            <div>
+                <label for="name">Battle Number:</label>
+                <input type="text" id="battle_number" name="name">
+            </div>
+
+            <button type="submit">Add a Battle</button>
+        </form>
+    </div>
+</div>
