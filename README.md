@@ -2,6 +2,7 @@
 Week 8 Thursday Assignment
 
 # Requirements
+As outlined in homework
 
 # Purpose:
 
